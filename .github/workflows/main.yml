@@ -19,15 +19,8 @@ jobs:
 
  
 
-      - name: Get Pull Requests
-        id: pr
-        run: |
-          echo "::set-output name=pulls::$(gh pr list -s open -F json)"
       - name: Perform Automatic Merge
         run: |
-          pulls="${{ steps.pr.outputs.pulls }}"
-          for pr in 2 3; do  # Replace 1, 2, 3 with the desired pull request numbers
-            gh pr merge $pr -m
-          done
+          gh pr merge 2 -m
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
