@@ -1,0 +1,39 @@
+{
+	"extends": [
+		"config:base"
+	],
+	"packageManagers": [
+		{
+			"packageManager": "maven",
+			"depTypeList": [
+				"maven"
+			]
+		}
+	],
+	"Schedule": [
+		"every hour"
+	],
+	"versioning": {
+		"default": "lockFileMaintenance",
+		"lockFileMaintenance": {
+			"pinVersions": {
+				"dependencies": {
+					"org.springframework.boot:spring-boot-starter-web": {
+						"rangeStrategy": "custom",
+						"versions": [
+							">=1.0.0 <2.0.0"
+						]
+					},
+					"org.springframework.boot:spring-boot-starter-data-jpa": {
+						"rangeStrategy": "custom",
+						"versions": [
+							">=2.5.3 <2.5.5"
+						]
+					}
+				}
+			}
+		}
+	},
+	"autodiscover": true,
+	"enabled": true
+}
