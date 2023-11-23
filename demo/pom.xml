@@ -24,7 +24,7 @@
 		<springBootStarterWebVersion>1.5.22.RELEASE</springBootStarterWebVersion>
 
 
-		<springBootStarterDataJpaVersion>2.7.13</springBootStarterDataJpaVersion>
+		<springBootStarterDataJpaVersion>2.7.18</springBootStarterDataJpaVersion>
 
 
 		<!-- Add more Spring Boot dependencies and their versions here -->
