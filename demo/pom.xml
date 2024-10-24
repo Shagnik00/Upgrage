@@ -21,10 +21,10 @@
 		<java.version>11</java.version>
 
 
-		<springBootStarterWebVersion>1.5.22.RELEASE</springBootStarterWebVersion>
+		<springBootStarterWebVersion>3.3.5</springBootStarterWebVersion>
 
 
-		<springBootStarterDataJpaVersion>2.7.13</springBootStarterDataJpaVersion>
+		<springBootStarterDataJpaVersion>3.3.5</springBootStarterDataJpaVersion>
 
 
 		<!-- Add more Spring Boot dependencies and their versions here -->
